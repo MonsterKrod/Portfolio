@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonsterKrod/Portfolio.git"
+  },
+  "keywords": [
+    "web",
+    "developer",
+    "portfolio"
+  ],
+  "author": "Stephen Appiah Frimpong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonsterKrod/Portfolio/issues"
+  },
+  "homepage": "https://github.com/MonsterKrod/Portfolio#readme",
+  "dependencies": {
+    "google-maps": "^3.2.1",
+    "gulp-minifier": "^0.2.1",
+    "jquery": "^3.1.1",
+    "jquery-browserify": "^1.8.1",
+    "noty": "^2.4.1",
+    "zoomove": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
