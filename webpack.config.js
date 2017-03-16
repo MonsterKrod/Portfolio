@@ -3,9 +3,7 @@ var path = require("path");
 //PETA!
 module.exports = {
   entry: {
-    "js": ["./src/public/js/main.js"],
-    "css": ["./src/public/css/main.css"],
-    "html": ["./src/index.html"]
+    app: ["./src/public/js/main.js"]
   },
   output: {
     path: __dirname + "/build",
