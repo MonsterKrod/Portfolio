@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "webpack && webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -24,13 +24,17 @@
   "homepage": "https://github.com/MonsterKrod/Portfolio#readme",
   "dependencies": {
     "google-maps": "^3.2.1",
-    "gulp-minifier": "^0.2.1",
     "jquery": "^3.1.1",
     "jquery-browserify": "^1.8.1",
     "noty": "^2.4.1",
     "zoomove": "^1.2.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^0.27.3",
+    "html-loader": "^0.4.5",
+    "style-loader": "^0.14.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
   }
 }
