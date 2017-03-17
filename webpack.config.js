@@ -1,4 +1,6 @@
-var path = require("path");
+const path = require("path");
+const webpack = require('webpack')
+const autoprefixer = require('autoprefixer')
 
 //PETA!
 module.exports = {
@@ -14,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: [ 'style-loader', 'css-loader' , 'postcss-loader']
       },
 
       {
@@ -26,15 +28,18 @@ module.exports = {
                 removeComments: true,
                 collapseWhitespace: false
               }
-            }],
+            }]
       }
+    ]
+  },
 
-    ],
-
-    loaders: [{
-      test: /\.css/,
-      loader: 'style-loader!css-loader!autoprefixer-loader'
-    }]
-  }
-
-};
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [
+          autoprefixer(),
+        ]
+       }
+    })
+  ]
+}
