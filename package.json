@@ -27,6 +27,7 @@
     "google-maps": "^3.2.1",
     "jquery": "^3.1.1",
     "jquery-browserify": "^1.8.1",
+    "normalize.css": "^5.0.0",
     "noty": "^2.4.1",
     "zoomove": "^1.2.1"
   },
