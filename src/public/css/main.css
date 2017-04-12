@@ -1,5 +1,83 @@
-body
+@import "Layout/layout.css";
+@import "Typography/fonts.css";
+@import "Animations/anim.css";
+
+.page,
+.landingPage
 {
-  background: #eee;
-  display: flex;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.landingPage
+{
+  height:auto;
+}
+.section-landing
+{
+  width: 100%;
+  height: 100%;
+}
+
+div.name
+{
+  width: auto;
+  height: 0px;
+  margin: 15% auto;
+  background: red;
+}
+
+h1.big,
+h1.normal,
+h1.normal_sul
+{
+  font-size: 72pt;
+  font-family: URBAN;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+}
+h1.normal
+{ font-size: 24pt;}
+
+h1.normal_sul
+{
+  font-size: 34pt;
+  font-family: JMH;
+  letter-spacing: 5px;
+}
+h1.normal_sul:hover
+{color: #f76c6c;}
+
+div.llistat
+{
+  width: auto;
+  height: 200px;
+  margin: 15% auto;
+}
+
+.bg,
+.mouse
+{
+  background-image: url('');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mouse
+{
+  background-image: url('../img/mouse.png');
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  opacity: 0;
+  animation: anim_mouse 1s ease-in-out infinite 1s;
+  position: relative;
+}
+
+.show
+{
+  transition: all ease-in-out 1s;
+  opacity: 1;
 }

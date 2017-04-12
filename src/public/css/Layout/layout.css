@@ -1,0 +1,31 @@
+@import "../Menu/menu.css";
+*
+{margin:0; padding: 0;}
+
+body
+{
+  width: 100%;
+  max-width: 100%;
+  max-height: 4800px;
+  display: block;
+  background: #f76c6c;
+  box-sizing: content-box;
+
+}
+
+footer
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+ul , li , a
+{
+  text-decoration: none;
+  list-style: none;
+}
+
+li
+{margin:10px;}

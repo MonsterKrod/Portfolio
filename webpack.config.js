@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require('webpack')
 const autoprefixer = require('autoprefixer')
 
-//PETA!
 module.exports = {
   entry: {
     app: ["./src/public/js/main.js"]
@@ -37,7 +36,7 @@ module.exports = {
     new webpack.LoaderOptionsPlugin({
       options: {
         postcss: [
-          autoprefixer(),
+          autoprefixer()
         ]
        }
     })
