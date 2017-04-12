@@ -29,3 +29,52 @@ ul , li , a
 
 li
 {margin:10px;}
+
+hr.line
+{
+  width: 70px;
+  position: relative;
+  border: solid 1px white;
+  right: -140px;
+  top: 25px;
+}
+
+h1.big,
+h1.normal,
+h1.normal_sul,
+h1.normalNorm,
+h1.normalDow,
+p.smallDow
+{
+  font-size: 72pt;
+  font-family: URBAN;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+}
+h1.normal
+{ font-size: 24pt;}
+
+h1.normalDow
+{font-size: 36pt; text-align: left;}
+
+p.smallDow
+{font-size: 18pt; text-align: left;}
+
+
+h1.normal_sul
+{
+  font-size: 34pt;
+  font-family: JMH;
+  letter-spacing: 5px;
+}
+h1.normal_sul:hover
+{color: #f76c6c;}
+
+h1.normalNorm
+{
+  font-size: 36pt;
+  font-family: JMH;
+  text-align: center;
+}

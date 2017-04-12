@@ -1,6 +1,7 @@
 // var css = require('./../css/main.css');
 // var html = require('./../../index.html');
 
+window.load = main();
 
 function animations()
 {
@@ -20,4 +21,10 @@ function btnMenu()
   });
 }
 
-btnMenu();
+
+
+function main()
+{
+  btnMenu();
+  console.log("Init ...");
+}
