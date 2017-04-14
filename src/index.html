@@ -4,18 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./public/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <title>Stephen Appiah</title>
   </head>
   <body onload="animations()">
 
-    <div class="menu">
+    <!-- <div class="menu">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </div> -->
 
     <!-- <div class="section-landing flipUp">
       <div class="landingPage">
@@ -26,7 +25,7 @@
 
         <div class="mouse"></div>
       </div>
-    </div>
+    </div> -->
 
     <div class="menuNDisplay">
       <div class="llistat">
@@ -39,7 +38,7 @@
       </div>
     </div>
 
-    <div class="section-proces flipUp">
+    <!-- <div class="section-proces flipUp">
 
       <div class="proces">
         <h1 class="normalDow">ANÀLISI</h1><br/>
@@ -57,44 +56,64 @@
         <p class="smallDow">Procediment <br/>per a determinar i <br/>entendre els detalls del <br/><h1 class="normal" id="projec">projecte</h1></p>
       </div>
 
-    </div> -->
+    </div>
 
-    <div class="section-project flipUp avgrund-contents">
+    <div class="section-project flipUp">
 
-      <div class="project-container content" id="videoZone">
+      <div class="project-container content paraxify projectBG" id="videoZone">
         <div class="title">
           <h1 class="normalNorm down">VIDEOZONE</h1><br/>
         </div>
         <div class="desc"></div>
       </div>
 
-      <div class="project-container sudo" id="sudoku">
+      <div class="project-container sudo paraxify projectBG" id="sudoku">
         <div class="title">
           <h1 class="normalNorm down">SUDOKUJS</h1><br/>
         </div>
         <div class="desc"></div>
       </div>
 
-      <div class="project-container sudo" id="flp">
+      <div class="project-container sudo paraxify projectBG" id="flp">
         <div class="title">
           <h1 class="normalNorm down">fruitloops</h1><br/>
         </div>
         <div class="desc"></div>
       </div>
-    </div>
-
-    <!-- <div class="section-contactar flipUp">
-
-      <div class="mapa">GOOGLE MAP!!</div>
-
-      <div class="contact">
-        form...
-      </div>
-
     </div> -->
 
-    <script src="./public/js/plugins/avgrund.js"></script>
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <div class="section-contactar flipUp">
+
+      <div class="mapa"></div>
+
+      <div class="contact">
+        <div class="connectar">
+          <p class="normal_sul" id="contactar">Connectar</p>
+          <div class="social">
+            <i class="fa fa-facebook soci" aria-hidden="true"></i>
+            <i class="fa fa-linkedin soci" aria-hidden="true"></i>
+            <i class="fa fa-youtube soci" aria-hidden="true"></i>
+            <i class="fa fa-github soci" aria-hidden="true"></i>
+          </div>
+        </div><br/>
+        <hr class="one">
+
+        <div class="form">
+          <form action="enviarCorreu" method="POST" class="form">
+            <input type="text" name="email" value="" placeholder="correu electronic ..." autofocus required>
+            <input type="text" name="sub" value="" placeholder="tema ..." required>
+            <textarea rows="20" cols="49" name="missatge" style="padding:10px;" required>Missatge ... </textarea>
+            <input type="submit" name="submite" value="Enviar">
+          </form>
+        </div>
+        <hr class="one">
+      </div>
+
+    </div>
+
+
+    <script src="./public/js/plugins/paraxify.js"></script>
     <script src="./public/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNZXAHTqxz4YaVA2sZKK6yf8jYbga-2FU&callback=initMap"></script>
   </body>
 </html>

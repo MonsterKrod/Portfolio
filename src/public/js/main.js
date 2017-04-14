@@ -1,8 +1,6 @@
 // var css = require('./../css/main.css');
 // var html = require('./../../index.html');
 
-
-
 window.load = main();
 
 function animations()
@@ -41,7 +39,32 @@ function projects() {
 
 function main()
 {
+  var myParaxify = paraxify('.paraxify');
   btnMenu();
   projects();
+  
   console.log("Init ...");
+}
+
+
+function initMap(){
+
+ var uluru = {lat: -25.363, lng: 131.044};
+ var qMap = document.querySelector('.mapa');
+
+ navigator.geolocation.getCurrentPosition(function(position){
+
+   uluru = {lat: position.coords.latitude, lng: position.coords.longitude};
+
+   var map = new google.maps.Map(qMap, {
+     zoom: 10,
+     center: uluru
+   });
+
+   var marker = new google.maps.Marker({
+     position: uluru,
+     map: map
+   });
+
+ });
 }

@@ -30,6 +30,16 @@ ul , li , a
 li
 {margin:10px;}
 
+
+i.soci
+{
+  font-size: 20pt;
+  color: white;
+  margin: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 hr.line
 {
   width: 70px;
@@ -39,12 +49,20 @@ hr.line
   top: 25px;
 }
 
+hr.one
+{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 h1.big,
 h1.normal,
 h1.normal_sul,
 h1.normalNorm,
 h1.normalDow,
-p.smallDow
+p.smallDow,
+p.normal_sul
 {
   font-size: 72pt;
   font-family: URBAN;
@@ -69,6 +87,13 @@ h1.normal_sul
   font-family: JMH;
   letter-spacing: 5px;
 }
+
+p.normal_sul
+{
+  font-size: 18pt;
+  font-family: SULLIVAN;
+}
+
 h1.normal_sul:hover
 {color: #f76c6c;}
 
