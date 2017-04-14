@@ -1,6 +1,8 @@
 // var css = require('./../css/main.css');
 // var html = require('./../../index.html');
 
+
+
 window.load = main();
 
 function animations()
@@ -21,10 +23,25 @@ function btnMenu()
   });
 }
 
+function openDialog() {
+	Avgrund.show( "#default-popup" );
+}
 
+function closeDialog() {
+	Avgrund.hide();
+}
+
+
+function projects() {
+    var project = $('.desc');
+    project.on('click' , ()=>{
+      openDialog();
+    });
+}
 
 function main()
 {
   btnMenu();
+  projects();
   console.log("Init ...");
 }
