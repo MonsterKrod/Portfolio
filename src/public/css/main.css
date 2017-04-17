@@ -6,15 +6,24 @@
 @import "Elements/buttons.css";
 
 @import "Elements/noty.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 
-.page,
-.landingPage,
-.project-container
+.page
 {
   width: 100%;
   height: 100%;
   display: block;
 }
+.landingPage,
+.project-container
+{
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+div.landingPage
+{margin-bottom: 10%;}
 
 .project-container
 {width: 50%;}
@@ -22,8 +31,6 @@
 .sudo
 {height: 50%;}
 
-.landingPage
-{height:auto;}
 
 
 .section-landing,
@@ -32,30 +39,20 @@
 .section-contactar
 {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity : 0;
+  height: auto;
 }
 
 .section-proces,
 .section-project,
 .section-contactar
 {
-  opacity: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .section-project
-{flex-flow: column wrap; opacity: 1;}
-
-.section-contactar
-{opacity: 0;}
+{flex-flow: column wrap;}
 
 
 div.title,
@@ -77,14 +74,14 @@ div.desc
 div.project-container:hover > div.title
 {
   cursor: pointer;
-  transition: all ease-in-out 0.8s;
+  transition: all ease-in-out 0.4s;
 }
 
 div.project-container:hover > div.desc
 {
   opacity: 1;
   height: 100%;
-  transition: all ease-in-out 0.8s;
+  transition: all ease-in-out 0.4s;
   cursor: pointer;
   color: black;
 }
@@ -93,7 +90,7 @@ div.project-container:not(:hover) > div.desc
 {
   opacity: 0;
   height: 0%;
-  transition: all ease-in-out 0.8s;
+  transition: all ease-in-out 0.4s;
   color: black;
 }
 
@@ -102,7 +99,7 @@ div.proces
 {
   width: auto;
   height: 0px;
-  margin: 15% auto;
+  margin-top:15%;
   background: red;
 }
 div.proces{margin: 17% auto;}
@@ -112,9 +109,9 @@ div.descriptions
 {
   width: auto;
   height: 200px;
-  margin: 15% auto;
 }
-div.descriptions{margin: 17% auto;}
+div.llistat{margin: 15% auto;}
+div.descriptions{margin-top:17%;}
 
 #proce,
 #projec
@@ -157,14 +154,14 @@ div.descriptions{margin: 17% auto;}
   background-repeat: no-repeat;
   background-size: cover;
 }
-.mouse,
+.mouse
 {
   background-image: url('../img/mouse.png');
   width: 50px;
   height: 50px;
-  margin: auto;
-  opacity: 0;
+  margin: 15% auto;
   animation: anim_mouse 1s ease-in-out infinite 1s;
+  opacity: 0;
   position: relative;
 }
 
