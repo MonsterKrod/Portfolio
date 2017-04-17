@@ -4,6 +4,8 @@
 @import "Elements/cricleProgresBar.css";
 @import "Elements/form.css";
 
+@import "Elements/noty.css";
+
 .page,
 .landingPage,
 .project-container
@@ -192,7 +194,8 @@ div.contact
 {width: 30%; background: #263238}
 
 div.connectar,
-div.form
+div.form,
+div.other
 {
   width: 100%;
   height: 20%;
@@ -203,6 +206,9 @@ div.form
 div.form
 {height: auto;}
 
+div.other
+{height: auto;}
+
 div.social
 {
   width: 100%;
@@ -210,6 +216,7 @@ div.social
   display: flex;
   justify-content: center;
 }
+
 .paraxify
 {
   background-attachment: fixed;

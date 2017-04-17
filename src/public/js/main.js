@@ -1,6 +1,3 @@
-// var css = require('./../css/main.css');
-// var html = require('./../../index.html');
-
 window.load = main();
 
 function animations()
@@ -21,30 +18,49 @@ function btnMenu()
   });
 }
 
-function openDialog() {
-	Avgrund.show( "#default-popup" );
+function resulOpera()
+{
+  var url = window.location.href;
+  if(url.includes('true'))
+  {
+    var pos = url.indexOf("true");
+    if(pos >= 0)
+    {
+      console.log("true");
+      notifica("Missatge enviat amb exit!" , 'info');
+
+    }
+  }
+
+  if(url.includes('false'))
+  {
+    var pos = url.indexOf("false");
+    if(pos >= 0)
+    {
+      notifica("Missatge Fallit :(" , 'error');
+    }
+  }
 }
 
-function closeDialog() {
-	Avgrund.hide();
-}
+function notifica(msg , tipus){
+  new Noty({
+    text: msg,
+    type: tipus,
+    theme : 'metroui',
+    layout: 'topRight',
+    progressBar : false
+}).show();
 
-
-function projects() {
-    var project = $('.desc');
-    project.on('click' , ()=>{
-      openDialog();
-    });
 }
 
 function main()
 {
   var myParaxify = paraxify('.paraxify');
   btnMenu();
-  projects();
-  
+  resulOpera();
   console.log("Init ...");
 }
+
 
 
 function initMap(){
@@ -57,7 +73,7 @@ function initMap(){
    uluru = {lat: position.coords.latitude, lng: position.coords.longitude};
 
    var map = new google.maps.Map(qMap, {
-     zoom: 10,
+     zoom: 15,
      center: uluru
    });
 

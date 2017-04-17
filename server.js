@@ -3,14 +3,13 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer');
-const Noty = require('noty');
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.use(express.static(path.join(__dirname, 'src')));
 app.use(bodyParser.text({ type: 'text/html' }));
 
-var enviarCorreu = function(con = {}){
+var enviarCorreu = function(con = {} , callback){
 
   var htmlE = "<h1> El usuari "+con.correu+" </h1><br>"
               +"<h3>Missatge :D </h3> <br>"
@@ -36,10 +35,7 @@ var enviarCorreu = function(con = {}){
 
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-          return console.log(error);
-      }
-      console.log('Message %s sent: %s', info.messageId, info.response);
+      callback(error , info);
   });
 
 }
@@ -52,10 +48,18 @@ app.post('/enviarCorreu' ,urlencodedParser , function(req , res){
     missatge : req.body.missatge
   }
 
-  enviarCorreu(dades);
-  //NOTY avisar de que correu s'han enviat correctament
-  
-  res.redirect('/');
+  enviarCorreu(dades , function(error , info) {
+
+    var secces = true;
+
+    if (error) {
+        secces = false;
+        return console.log(error);
+    }
+    console.log('Message %s sent: %s', info.messageId, info.response);
+    res.redirect('/?='+secces);
+  });
+
 
 });
 

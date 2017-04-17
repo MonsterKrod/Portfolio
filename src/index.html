@@ -10,13 +10,14 @@
   </head>
   <body onload="animations()">
 
-    <!-- <div class="menu">
+     <div class="menu">
       <span></span>
       <span></span>
       <span></span>
-    </div> -->
+    </div> 
 
-    <!-- <div class="section-landing flipUp">
+<!--
+     <div class="section-landing flipUp">
       <div class="landingPage">
         <div class="name">
           <h1 class="big">STEPHEN APPIAH</h1><br/>
@@ -25,7 +26,8 @@
 
         <div class="mouse"></div>
       </div>
-    </div> -->
+    </div> 
+-->
 
     <div class="menuNDisplay">
       <div class="llistat">
@@ -38,7 +40,8 @@
       </div>
     </div>
 
-    <!-- <div class="section-proces flipUp">
+<!--
+     <div class="section-proces flipUp">
 
       <div class="proces">
         <h1 class="normalDow">ANÀLISI</h1><br/>
@@ -57,6 +60,7 @@
       </div>
 
     </div>
+-->
 
     <div class="section-project flipUp">
 
@@ -80,8 +84,9 @@
         </div>
         <div class="desc"></div>
       </div>
-    </div> -->
+    </div> 
 
+<!--
     <div class="section-contactar flipUp">
 
       <div class="mapa"></div>
@@ -90,10 +95,10 @@
         <div class="connectar">
           <p class="normal_sul" id="contactar">Connectar</p>
           <div class="social">
-            <i class="fa fa-facebook soci" aria-hidden="true"></i>
-            <i class="fa fa-linkedin soci" aria-hidden="true"></i>
-            <i class="fa fa-youtube soci" aria-hidden="true"></i>
-            <i class="fa fa-github soci" aria-hidden="true"></i>
+            <a href=""><i class="fa fa-facebook soci" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin soci" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-youtube soci" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-github soci" aria-hidden="true"></i></a>
           </div>
         </div><br/>
         <hr class="one">
@@ -102,16 +107,23 @@
           <form action="enviarCorreu" method="POST" class="form">
             <input type="text" name="email" value="" placeholder="correu electronic ..." autofocus required>
             <input type="text" name="sub" value="" placeholder="tema ..." required>
-            <textarea rows="20" cols="49" name="missatge" style="padding:10px;" required>Missatge ... </textarea>
+            <textarea rows="15" cols="49" name="missatge" style="padding:10px;" placeholder="Missatge ... " required></textarea>
             <input type="submit" name="submite" value="Enviar">
           </form>
         </div>
         <hr class="one">
+          
+          <div class="other">
+            <i class="fa fa-envelope other" aria-hidden="true"></i><p class="special">eunisaesea@gmail.com</p><br>
+            <i class="fa fa-phone-square other" aria-hidden="true"></i><p class="special">632736096</p>
+          </div>
       </div>
 
     </div>
+-->
 
 
+    <script src="./public/js/plugins/noty/lib/noty.js"></script>
     <script src="./public/js/plugins/paraxify.js"></script>
     <script src="./public/js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNZXAHTqxz4YaVA2sZKK6yf8jYbga-2FU&callback=initMap"></script>

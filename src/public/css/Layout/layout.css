@@ -1,6 +1,8 @@
 @import "../Menu/menu.css";
-*
-{margin:0; padding: 0;}
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+*{margin:0; padding: 0;}
 
 body
 {
@@ -31,13 +33,21 @@ li
 {margin:10px;}
 
 
-i.soci
+i.soci,
+i.other
 {
   font-size: 20pt;
   color: white;
   margin: 20px;
   margin-left: 25px;
   margin-right: 25px;
+}
+i.other
+{
+    font-size: 8pt;
+    margin: 10px;
+    margin-top: 15px;
+    letter-spacing: 0px;
 }
 
 hr.line
@@ -62,7 +72,8 @@ h1.normal_sul,
 h1.normalNorm,
 h1.normalDow,
 p.smallDow,
-p.normal_sul
+p.normal_sul,
+p.special
 {
   font-size: 72pt;
   font-family: URBAN;
@@ -94,6 +105,14 @@ p.normal_sul
   font-family: SULLIVAN;
 }
 
+p.special
+{
+  font-size: 8pt;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  
+}
 h1.normal_sul:hover
 {color: #f76c6c;}
 
