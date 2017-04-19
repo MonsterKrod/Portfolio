@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer');
+const port = 3000;
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
@@ -63,5 +64,5 @@ app.post('/enviarCorreu' ,urlencodedParser , function(req , res){
 
 });
 
-app.listen(8080);
-console.log('Listening on port 8080');
+app.listen(port);
+console.log('Listening on port '+port);

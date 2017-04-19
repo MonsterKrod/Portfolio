@@ -7,12 +7,7 @@ function animations()
 }
 
 function animate() {
-
-  var sp = document.querySelector('.sp');
-  window.addEventListener("scroll", function(){
-      console.log("ohlh");
-  });
-
+  //TODO animate on scroll every section
 }
 
 function btnMenu()
@@ -61,8 +56,6 @@ function notifica(msg , tipus){
   }).show();
 }
 
-
-
 function desc() {
 
     var $avgContent = $('.avgContent');
@@ -85,6 +78,42 @@ function desc() {
   });
 }
 
+
+function sectionProces()
+{
+  $(".procAnalisis").Morphext({
+      animation: "bounceIn",
+      separator: "|",
+      speed: 3000,
+      complete: function () {
+        $('.circle').css({
+          
+        });
+      }
+  });
+
+  $("#one").Morphext({
+      animation: "rotateInDownLeft",
+      separator: "|",
+      speed: 3000,
+      complete: function () {}
+  });
+
+  $("#frases").Morphext({
+      animation: "tada",
+      separator: "|",
+      speed: 3000,
+      complete: function () {}
+  });
+
+  $("#projec").Morphext({
+      animation: "pulse",
+      separator: "|",
+      speed: 3000,
+      complete: function () {}
+  });
+}
+
 function main()
 {
   var myParaxify = paraxify('.paraxify');
@@ -92,6 +121,7 @@ function main()
   resulOpera();
   desc();
   animate();
+  sectionProces();
   console.log("Init ...");
 }
 

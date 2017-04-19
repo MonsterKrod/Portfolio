@@ -54,6 +54,8 @@ div.landingPage
 .section-project
 {flex-flow: column wrap;}
 
+.section-proces
+{flex-wrap: nowrap;}
 
 div.title,
 div.desc
@@ -100,18 +102,22 @@ div.proces
   width: auto;
   height: 0px;
   margin-top:15%;
-  background: red;
 }
-div.proces{margin: 17% auto;}
+div.proces
+{
+  width: 510px;
+  height: 200px;
+  margin:17% auto;
+}
 
 div.llistat,
 div.descriptions
 {
-  width: auto;
+  width: 510px;
   height: 200px;
 }
 div.llistat{margin: 15% auto;}
-div.descriptions{margin-top:17%;}
+div.descriptions{margin:17% auto;}
 
 #proce,
 #projec
