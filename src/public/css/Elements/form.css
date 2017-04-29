@@ -13,11 +13,18 @@ input[type=text]
 
 input[type=button], input[type=submit]
 {
-    background-color: #f76c6c;
+    background-color: #00BCD4;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     cursor: pointer;
-    width: 100%;
+    width: 95%;
+    margin-top: 5%;
+}
+
+input[type=button], input[type=submit]:hover
+{
+  background-color: #f76c6c;
+  transition: all ease .5s;
 }

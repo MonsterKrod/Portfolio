@@ -10,16 +10,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <title>Stephen Appiah</title>
   </head>
-  <body onload="animations()">
-    <div class="page">
 
-      <!-- <div class="menu">
+  <body onload="animations();">
+
+    <div class="page main" id="page">
+      <div class="capa"></div>
+      <div class="menu">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-       <div class="section-landing flipUp">
+      <div class="section-landing hey">
         <div class="landingPage">
           <div class="name">
             <h1 class="big animated fadeInDown">STEPHEN APPIAH</h1><br/>
@@ -28,33 +30,59 @@
 
           <div class="mouse"></div>
         </div>
+       </div>
+
+       <nav>
+        <ul class="menu">
+          <li><a href="#page"><h1 class="normal_sul">INICI</h1></a></li>
+          <li><a href="Sobre.html"><h1 class="normal_sul">SOBRE ME!</h1></a></li>
+          <li><a href="#projec"><h1 class="normal_sul">PROJECTES</h1></a></li>
+          <li><a href="Contactar.html"><h1 class="normal_sul">CONTACTAR</h1></a></li>
+        </ul>
+      </nav>
+
+      <div class="section-presentation">
+        <div class="design">
+          <div class="des_text">
+            <h1 class="roboto">El disseny del que desitja</h1><br>
+            <div class="paragraf">
+              <p class="lato">
+                M'agrada que sigui senzill.<br>
+                Els meus metes són centrar-se en
+                el contingut i transmetre el missatge que voleu enviar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="develop">
+          <div class="des_text">
+            <h1 class="roboto">Desenvolupar el que necessita.</h1><br>
+            <div class="paragraf">
+              <p class="lato">
+                Sóc un desenvolupador,
+                sé com crear el seu lloc web per córrer
+                a través de dispositius utilitzant
+                les últimes tecnologies disponibles.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-
-      <div class="menuNDisplay">
-        <div class="llistat">
-          <ul>
-            <li><a href="#"><h1 class="normal_sul">INICI</h1></a></li>
-            <li><a href="#"><h1 class="normal_sul">SOBRE ME!</h1></a></li>
-            <li><a href="#"><h1 class="normal_sul">PROJECTES</h1></a></li>
-            <li><a href="#"><h1 class="normal_sul">CONTACTAR</h1></a></li>
-          </ul>
-        </div>
-      </div> -->
-
-
-       <div class="section-proces flipUp">
+       <div class="section-proces">
 
         <div class="proces">
-          <h1 class="normalDow animated sp procAnalisis">ANÀLISI|MAQUETACIÒ|DISSENY|DESENVOLUPAMENT|PROVES|ENTREGA</h1><br/>
-          <!-- <h1 class="normal animated sp" id="proce">PROCES </h1> -->
-          <!-- <i class="fa fa-space-shuttle" aria-hidden="true" id="space"></i> -->
+          <h1 class="normalDow animated sp procAnalisis black">ANÀLISI|MAQUETACIÒ|DISSENY|DESENVOLUPAMENT|PROVES|ENTREGA</h1><br/>
           <hr class="line animated sp"/><p  class="smallDow animated sp" id="one">01|02|03|04|05|06</p>
         </div>
 
-        <div class="cricleProgresBar">
-          <div class="circle"></div>
-          <div class="percentatge"><h1 class="normal" id="percent">0</h1></div>
+       <div class="circle-container">
+          <div class="cricleProgresBar">
+            <div class="circle"></div>
+            <!-- <div class="percentatge"><h1 class="normal" id="percent">0|20|40|60|80|100</h1></div> -->
+          </div>
         </div>
 
         <div class="descriptions">
@@ -65,83 +93,63 @@
 
       </div>
 
-<!--
-      <div class="section-project flipUp">
 
-        <div class="project-container content paraxify projectBG" id="videoZone">
+      <div class="section-project" id="#projec">
+
+        <div class="project-container hey" id="videoZone">
           <div class="title">
             <h1 class="normalNorm down">VIDEOZONE</h1><br/>
           </div>
-          <div class="desc">Contingut descripciio ...</div>
+          <div class="desc"></div>
         </div>
 
-        <div class="project-container sudo paraxify projectBG" id="sudoku">
+        <div class="project-container sudo cardBG" id="sudoku">
           <div class="title">
             <h1 class="normalNorm down">SUDOKUJS</h1><br/>
           </div>
-          <div class="desc">Contingut descripciio ...</div>
+          <div class="desc"></div>
         </div>
 
-        <div class="project-container sudo paraxify projectBG" id="flp">
+        <div class="project-container sudo cine" id="flp">
           <div class="title">
             <h1 class="normalNorm down">fruitloops</h1><br/>
           </div>
-          <div class="desc">Contingut descripciio ...</div>
+          <div class="desc"></div>
         </div>
       </div>
 
-
-      <div class="section-contactar flipUp">
-
-        <div class="mapa"></div>
-
-        <div class="contact">
-          <div class="connectar">
-            <p class="normal_sul" id="contactar">Connectar</p>
-            <div class="social">
-              <a href=""><i class="fa fa-facebook soci" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-linkedin soci" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-youtube soci" aria-hidden="true"></i></a>
-              <a href=""><i class="fa fa-github soci" aria-hidden="true"></i></a>
-            </div>
-          </div><br/>
-          <hr class="one">
-
-          <div class="form">
-            <form action="enviarCorreu" method="POST" class="form">
-              <input type="text" name="email" value="" placeholder="correu electronic ..." autofocus required>
-              <input type="text" name="sub" value="" placeholder="tema ..." required>
-              <textarea rows="15" cols="49" name="missatge" style="padding:10px;" placeholder="Missatge ... " required></textarea>
-              <input type="submit" name="submite" value="Enviar">
-            </form>
+      <aside id="default-popup" class="avgrund-popup amaga">
+        <div class="avgContent">
+          <div class="avgd">
+              <p class="normal_sul" style="color:black;">Mes info ...</p>
           </div>
-          <hr class="one">
-
-            <div class="other">
-              <i class="fa fa-envelope other" aria-hidden="true"></i><p class="special">eunisaesea@gmail.com</p><br>
-              <i class="fa fa-phone-square other" aria-hidden="true"></i><p class="special">632736096</p>
-            </div>
+          <div class="avgd">
+            <button type="button" name="button" class="btn">Live</button>
+            <button type="button" name="button" class="btn">Demo</button>
+          </div>
         </div>
+      </aside>
 
-      </div>
+      <footer>
+        <div class="section-footer">
+          <div class="conti">
+            <div class="social">
+              <a href="https://www.facebook.com/eunisaesea"><i class="fa fa-facebook soci" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/stephen-appiah-01ab39116/"><i class="fa fa-linkedin soci" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com/channel/UCzumqWVks-Z12OduEdiD2Ag"><i class="fa fa-youtube soci" aria-hidden="true"></i></a>
+              <a href="https://github.com/MonsterKrod"><i class="fa fa-github soci" aria-hidden="true"></i></a>
+            </div>
+            <p class="special">Copyright © 2017 </p><br>
+            <p class="special">Stephen Appiah</p>
+          </div>
+          </div>
+      </footer>
 
-
-    <div class="avgContent">
-      <div class="avgd">
-          <p class="normal_sul" style="color:black;">Mes info ...</p>
-      </div>
-      <div class="avgd">
-        <button type="button" name="button" class="btn">Live</button>
-        <button type="button" name="button" class="btn">Demo</button>
-      </div> -->
     </div>
 
-    </div>
     <script src="./public/js/plugins/noty/lib/noty.js"></script>
     <script src="./public/js/plugins/avgrund/jquery.avgrund.js"></script>
-    <script src="./public/js/plugins/paraxify.js"></script>
     <script src="./public/js/plugins/Morphext/dist/morphext.js"></script>
     <script src="./public/js/main.js"></script>
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNZXAHTqxz4YaVA2sZKK6yf8jYbga-2FU&callback=initMap"></script> -->
   </body>
 </html>

@@ -5,7 +5,10 @@
   border: dotted 4px white;
   background: #f76c6c;
   border-radius: 50%;
-  margin: 10% auto;
+  position: absolute;
+  margin: auto;
+  transition: all ease-in-out 1s;
+  
 }
 
 .circle
@@ -17,4 +20,15 @@
   background: #f76c6c;
   border-radius: 50%;
   margin: -15px auto;
+  position: absolute;
+  left: 50%;
+}
+
+.circle-container
+{
+  width: 350px;
+  height: 350px;
+  margin: 10% auto;
+  transform: rotate(0deg);
+  transition: all ease-in-out 1s;
 }

@@ -21,12 +21,21 @@
   height: 250px;
   display: block;
 }
-
-div.landingPage
-{margin-bottom: 10%;}
+.landingPage
+{
+  height: 250px;
+  display: inline-block;;
+  margin-top: 15%;
+}
 
 .project-container
-{width: 50%;}
+{
+  width: 50%;
+  height: 100%;
+}
+
+aside.amaga
+{display: none;}
 
 .sudo
 {height: 50%;}
@@ -36,7 +45,8 @@ div.landingPage
 .section-landing,
 .section-proces,
 .section-project,
-.section-contactar
+.section-contactar,
+.section-presentation
 {
   width: 100%;
   height: auto;
@@ -44,24 +54,83 @@ div.landingPage
 
 .section-proces,
 .section-project,
-.section-contactar
+.section-contactar,
+.section-presentation,
+.section-footer,
+.section-about
 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
+.section-landing
+{height: 672px;}
 
+.section-about
+{height: auto;}
 .section-project
-{flex-flow: column wrap;}
+{
+  flex-flow: column wrap;
+  height: 672px;
+}
 
+.section-presentation
+{
+  height: 675px;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  background: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 .section-proces
-{flex-wrap: nowrap;}
+{
+  flex-wrap: nowrap;
+  height: 672px;
+  background: #f76c6c;
+}
+
+.section-footer
+{
+  flex-flow: column wrap;
+  background: #009688;
+}
+div.conti
+{
+  width: 90%;
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 div.title,
 div.desc
 {
   width: 100%;
   height: 100%;
+}
+
+div.design ,
+div.develop
+{
+  width: 100%;
+  height: 50%;
+  display: flex;
+
+}
+
+div.des_text
+{
+  width: 70%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+div.paragraf
+{
+  width: 42%;
+  margin: 5px auto;
 }
 
 div.desc
@@ -76,14 +145,14 @@ div.desc
 div.project-container:hover > div.title
 {
   cursor: pointer;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.2s;
 }
 
 div.project-container:hover > div.desc
 {
   opacity: 1;
   height: 100%;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.2s;
   cursor: pointer;
   color: black;
 }
@@ -92,7 +161,7 @@ div.project-container:not(:hover) > div.desc
 {
   opacity: 0;
   height: 0%;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.2s;
   color: black;
 }
 
@@ -101,11 +170,10 @@ div.proces
 {
   width: auto;
   height: 0px;
-  margin-top:15%;
 }
 div.proces
 {
-  width: 510px;
+  width: 34%;
   height: 200px;
   margin:17% auto;
 }
@@ -113,31 +181,106 @@ div.proces
 div.llistat,
 div.descriptions
 {
-  width: 510px;
+  width: 34%;
   height: 200px;
 }
 div.llistat{margin: 15% auto;}
-div.descriptions{margin:17% auto;}
+div.descriptions
+{
+  margin:17% auto;
+}
 
 #proce,
 #projec
-{text-align: left; color: #263366;}
+{text-align: center; color: #263366;}
 
-#proce{text-align: right;}
+#proce{text-align: center;}
 #one ,#space
 {
   position: relative;
   top: 7px;
-  left: 220px;
+  left: 320px;
+  text-align:left;
 }
 
 #space
-{top: -25px; color: #263366}
+{
+  top: -25px;
+  color: #263366;
+}
+#lleters
+{
+  font-size: 15pt;
+  opacity: .8;
+  color: black;
+  text-align: center;
+}
 
+div.percentatge
+{
+  width: 100px;
+  height: 50px;
+  background: blue;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+}
 #percent
-{margin: 48% auto;}
+{text-align: center;}
 
+#textID
+{
+  font-size: 13pt;
+  color: black;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+div.con
+{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+div.bout,
+div.design_abou
+{
+  width: 50%;
+  height: 50%;
+  margin-top:10%;
+}
+div.bout
+{
+  border-radius: 2em;
+  height: 400px;
+}
+div.about
+{
+  width: 90%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  z-index: 50;
+}
+
+div.montar
+{
+  width: 100%;
+  height: 400px;
+  z-index: 40;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+div.par_abo
+{
+  word-break: break-all;
+  width: auto;
+}
 #videoZone
+
 {background-color: #00BCD4;}
 
 #sudoku
@@ -153,13 +296,33 @@ div.descriptions{margin:17% auto;}
 .mouse,
 .projectBG,
 .mapa,
-.cardBG
+.cardBG,
+.hey,
+.cine,
+.about_img,
+.sobre_img
 {
   background-image: url('');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.hey
+{background-image: url('https://exposure-media.s3.amazonaws.com/production/photos/y1fbjqnoaem2vswpq60lsm2r00ib3d0khaky/original.gif?fm=pjpg&auto=format');}
+
+.cine
+{background-image: url('https://1stwebdesigner.com/wp-content/uploads/2017/02/cinemagraph.gif');}
+
+.about_img
+{background-image: url('https://1stwebdesigner.com/wp-content/uploads/2017/02/cinemagraph.gif');}
+
+.sobre_img
+{
+  background-image: url('http://www.planwallpaper.com/static/images/abstract-wallpaper-20.jpg');
+  background-attachment: fixed;
+}
+
 .mouse
 {
   background-image: url('../img/mouse.png');
@@ -190,7 +353,7 @@ div.descriptions{margin:17% auto;}
 
 .cardBG
 {
-  background-image: url('http://goldwallpapers.com/uploads/posts/card-wallpaper/card_wallpaper_010.jpg');
+  background-image: url('http://farm4.static.flickr.com/3025/5698564979_1686a328ef_o.gif');
 }
 
 div.mapa,
@@ -244,9 +407,6 @@ div.avgd
   display: flex;
   flex-flow: row wrap;
 }
-.paraxify
-{
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+div.cotact{
+  background: #EEEEEE;
 }

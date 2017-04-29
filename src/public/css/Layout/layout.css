@@ -1,6 +1,6 @@
 @import "../Menu/menu.css";
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 *{margin:0; padding: 0;}
 
@@ -15,7 +15,7 @@ body
   max-width: 100%;
   max-height: 4800px;
   display: block;
-  background: #f76c6c;
+  background: white;
   box-sizing: content-box;
   overflow: scroll;
 
@@ -30,7 +30,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #03A9F4;
+  background:#03A9F4;
   outline: 1px solid slategrey;
 }
 
@@ -75,7 +75,7 @@ hr.line
   width: 70px;
   position: relative;
   border: solid 1px white;
-  right: -140px;
+  right: -240px;
   top: 25px;
 }
 
@@ -107,10 +107,10 @@ h1.normal
 { font-size: 24pt;}
 
 h1.normalDow
-{font-size: 36pt; text-align: left;}
+{font-size: 30pt; text-align: center;}
 
 p.smallDow
-{font-size: 18pt; text-align: left;}
+{font-size: 18pt; text-align: center;}
 
 
 h1.normal_sul
@@ -126,20 +126,36 @@ p.normal_sul
   font-family: SULLIVAN;
 }
 
-p.special
+p.special,
+p.lato
 {
   font-size: 8pt;
   display: inline-block;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
 
 }
-h1.normal_sul:hover
-{color: #f76c6c;}
+p.lato
+{
+  font-size: 15pt;
+  word-break: break-all;
+}
+
 
 h1.normalNorm
 {
   font-size: 36pt;
   font-family: JMH;
   text-align: center;
+}
+
+h1.roboto
+{
+  font-size: 20pt;
+  font-family: 'Roboto';
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top:5%;
+  color:#45b29a;
 }

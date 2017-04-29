@@ -1,5 +1,17 @@
 window.load = main();
 
+function main()
+{
+  btnMenu();
+  resulOpera();
+  desc();
+  animate();
+  sectionProces();
+  scroll();
+  console.log("Init ...");
+}
+
+
 function animations()
 {
   var $mouse = $('.mouse');
@@ -12,14 +24,30 @@ function animate() {
 
 function btnMenu()
 {
-  var $menu = $('.menu');
-  var $menu_drop = $('.menuNDisplay');
-
-  $menu.click(function(){
+  $('.menu').click(function(event) {
+    $('nav').toggleClass('active');
+    $('.capa').toggleClass('fosc');
     $(this).toggleClass('creu');
-    $menu_drop.toggleClass('menuNDisplay')
-    $menu_drop.addClass('menu-drop');
   });
+}
+
+function scroll()
+{
+  var operar = false;
+  var scroll;
+
+  window.addEventListener('scroll', function() {
+          console.log('scrolling');
+  });
+
+  //  if(scroll > 0){
+   //
+  //     if(!operar){operar = true;}
+   //
+  //  }else{
+  //    if(operar){operar = false;}
+  //  }
+
 }
 
 function resulOpera()
@@ -72,12 +100,16 @@ function desc() {
       onBlurContainer: '', // enables blur filter for specified block
       openOnEvent: true, // set to 'false' to init on load
       setEvent: 'click', // use your event like 'mouseover', 'touchmove', etc.
-      onLoad: function (elem) {}, // set custom call before popin is inited..
+      onLoad: function (elem) {
+        $('aside.amaga').css({
+          "display": "block"
+        });
+
+      }, // set custom call before popin is inited..
       onUnload: function (elem) {}, // ..and after it was closed
       template: $avgContent // or function (elem) { ... }, or selector $('.content')
   });
 }
-
 
 function sectionProces()
 {
@@ -87,7 +119,7 @@ function sectionProces()
       speed: 3000,
       complete: function () {
         $('.circle').css({
-          
+
         });
       }
   });
@@ -112,17 +144,34 @@ function sectionProces()
       speed: 3000,
       complete: function () {}
   });
-}
 
-function main()
-{
-  var myParaxify = paraxify('.paraxify');
-  btnMenu();
-  resulOpera();
-  desc();
-  animate();
-  sectionProces();
-  console.log("Init ...");
+  $("#percent").Morphext({
+      animation: "shake",
+      separator: "|",
+      speed: 3000,
+      complete: function () {}
+  });
+
+  var count = 60;
+  var nv = 0;
+
+  setInterval(function () {
+    $(".circle-container").css({
+      "transform": "rotate("+count+"deg)"
+    });
+
+    if(nv === 6)
+    {
+      count = 0;
+      $(".circle-container").css({
+        "transform": "rotate("+count+"deg)"
+      });
+    }
+
+    count += 60;
+
+  }, 3000);
+
 }
 
 function initMap(){
