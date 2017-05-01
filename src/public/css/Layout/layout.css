@@ -134,8 +134,9 @@ p.lato
 }
 p.lato
 {
-  font-size: 15pt;
+  font-size: 10pt;
   word-break: break-all;
+	opacity: .7;
 }
 
 
