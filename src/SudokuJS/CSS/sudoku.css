@@ -1,0 +1,81 @@
+.contenidor
+{
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  height: 800px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.taulaSudo
+{
+  width: 70%;
+  height: 90%;
+  margin-top: 5px;
+  padding: 20px;
+}
+
+.estat
+{
+    width: 70%;
+    height: 300px;
+    padding: 20px;
+    background: #00BFA5;
+    z-index: 800;
+    position: absolute;
+    top: -400px;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    transition: all ease-in-out 1s;
+    box-shadow: 0px 8px 0px 0px #006064;
+}
+.msg
+{
+    font-family: fantasy;
+    font-size: 5em;
+    color: white;
+    text-align: center;
+}
+
+.jugar,
+.continuar
+{
+    display: inline-block;
+    margin: 10px auto;
+    position: relative;
+    background: #2196F3;
+    border-radius: 100%;
+    box-shadow: 0px 5px 0px 0px #006064;
+}
+
+.jugar > i ,
+.continuar > i
+{
+    color: white;
+    font-size: 10em;
+}
+
+.continuar > i
+{
+    font-size: 3em;
+}
+
+.continuar:hover
+{
+    cursor: pointer;
+    background: #E91E63;
+    transition: all ease .8s;
+    
+}
+
+.jugar:hover
+{
+    cursor: pointer;
+    background: #E91E63;
+    transition: all ease .8s;
+    
+}

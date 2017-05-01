@@ -1,0 +1,94 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="Descripcio" content="Sudoku" />
+  <meta name="author" content="Stephen Appiah" />
+  <meta name="viewport" content="width=device-width, user-scalable =no ,initial-scale=1 , maximum-scale=1.0, minimum-scale=1.0" />
+  <!-- CSS-->
+  <link rel="stylesheet" href="CSS/style.css" />
+  <!-- Fonts Google-->
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    
+  <!--Google CSS-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- CDN-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <title>SUDOKU</title>
+</head>
+
+<body onload="javascript:scroll()" style="margin:0;">
+    
+    <div class="capa"></div>
+    <div id="loader"></div>
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        
+        <div class="contenidor-flex">
+            <div class="contenidor_hamb">
+                <div class="menu_hamburgessa">
+                    <div id="burger">
+                      <span>&nbsp;</span>
+                      <span>&nbsp;</span>
+                      <span>&nbsp;</span>
+                      <span>&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                 <div class="op comensarNou"><i class="material-icons">play_circle_filled</i></div>
+                    <div class="op ajuda"><i class="material-icons">live_help</i></div>
+                    <div class="op nivel">
+                        <i class="material-icons">view_list</i>
+                        <ul class="ulNivel">
+                            <li id="facil">Facil :) </li>
+                            <hr class="lineaRecta"/>
+                            <li id="normal">Normal ^^ </li>
+                            <hr class="lineaRecta"/>
+                            <li id="dificil">Dificil! :o </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <div class="contenidor">
+          <div class="papelera papelera-img-tancat"></div>
+          <div class="panell"></div>
+          <div class="taulaSudo"></div>
+        </div>
+
+        <div class="estat">
+            <div class="msg"></div>
+            <div class="jugar comensarNou"><i class="material-icons">play_circle_filled</i></div>
+            <div class="continuar"><i class="material-icons">repeat</i></div>
+        </div>
+
+    </div>
+    
+    <script src="JS/SO.js"></script>
+    <script src="JS/Taula.js"></script>
+    <script src="JS/Panell.js"></script>
+    <script src="JS/Comprovador.js"></script>
+    <script src="JS/Sudoku.js"></script>
+    <script src="JS/Menu.js"></script>
+
+    <script>
+        $(function(){
+            
+          $('body').fadeIn(500);
+          $('.menu_hamburgessa').on('click',function(){
+                $(this).toggleClass('creu');
+                $('.opcions').toggleClass('mostrar');
+                $('.op').toggleClass('en');
+            });
+            
+         $('.nivel').on('click',function(){
+             var $ul = $(this).find('ul.ulNivel');
+             $ul.toggleClass('mostrarULNivell')
+         });
+            
+        });
+    </script>
+</body>

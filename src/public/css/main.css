@@ -4,6 +4,8 @@
 @import "Elements/cricleProgresBar.css";
 @import "Elements/form.css";
 @import "Elements/buttons.css";
+@import "Mediaquery/media.css";
+@import "Elements/profile.css";
 
 @import "Elements/noty.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
@@ -35,7 +37,9 @@
 }
 
 aside.amaga
-{display: none;}
+{
+  display: none;
+}
 
 .sudo
 {height: 50%;}
@@ -122,7 +126,7 @@ div.develop
 
 div.des_text
 {
-  width: 70%;
+  width: 80%;
   height: 100%;
   display: block;
   margin: 0 auto;
@@ -279,8 +283,14 @@ div.par_abo
   word-break: break-all;
   width: auto;
 }
-#videoZone
 
+div.right
+{margin-left: 40%;}
+
+div.lefpar
+{margin-left: -10%;}
+
+#videoZone
 {background-color: #00BCD4;}
 
 #sudoku
@@ -300,7 +310,8 @@ div.par_abo
 .hey,
 .cine,
 .about_img,
-.sobre_img
+.sobre_img,
+.bg_ph
 {
   background-image: url('');
   background-position: center;
@@ -309,7 +320,10 @@ div.par_abo
 }
 
 .hey
-{background-image: url('https://exposure-media.s3.amazonaws.com/production/photos/y1fbjqnoaem2vswpq60lsm2r00ib3d0khaky/original.gif?fm=pjpg&auto=format');}
+{
+  background-image: url('https://exposure-media.s3.amazonaws.com/production/photos/y1fbjqnoaem2vswpq60lsm2r00ib3d0khaky/original.gif?fm=pjpg&auto=format');
+  background-attachment: fixed;
+}
 
 .cine
 {background-image: url('https://1stwebdesigner.com/wp-content/uploads/2017/02/cinemagraph.gif');}
@@ -317,9 +331,15 @@ div.par_abo
 .about_img
 {background-image: url('https://1stwebdesigner.com/wp-content/uploads/2017/02/cinemagraph.gif');}
 
+.bg_ph
+{
+  background-image: url('../img/img.jpg');
+  background-position: right;
+}
+
 .sobre_img
 {
-  background-image: url('http://www.planwallpaper.com/static/images/abstract-wallpaper-20.jpg');
+  background-image: url('https://images7.alphacoders.com/408/408268.jpg');
   background-attachment: fixed;
 }
 
@@ -334,6 +354,35 @@ div.par_abo
   position: relative;
 }
 
+
+div.profileCircle,
+div.profile
+{
+  width: 250px;
+  height: 250px;
+  background: blue;
+  margin: auto;
+  position: relative;
+  top: 5px;
+  left: 25%;
+  border-radius:8px;
+  background-image: url('http://theinspirationgrid.com/wp-content/uploads/2013/12/oscar-romer-01.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+div.profile
+{
+  background-image: url('https://s-media-cache-ak0.pinimg.com/736x/47/9c/16/479c16c494cd60af10ea49467598777f.jpg');
+  background-size: cover;
+}
+
+#cilceP
+{
+  left: -35%;
+  top: 15%;
+}
 .show
 {
   transition: all ease-in-out 1s;
@@ -409,4 +458,9 @@ div.avgd
 }
 div.cotact{
   background: #EEEEEE;
+}
+
+div.iconf
+{
+  font-size: 40px;
 }

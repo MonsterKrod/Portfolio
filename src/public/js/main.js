@@ -7,10 +7,13 @@ function main()
   desc();
   animate();
   sectionProces();
-  scroll();
   console.log("Init ...");
 }
 
+
+function obrirFinestra(finestra) {
+  window.open(finestra);
+}
 
 function animations()
 {
@@ -19,7 +22,19 @@ function animations()
 }
 
 function animate() {
-  //TODO animate on scroll every section
+
+  $(document).ready(function(){
+    $('section[data-type="parallax_section"]').each(function(){
+        var $bgobj = $(this);
+        $(window).scroll(function() {
+            $window = $(window);
+            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+            var coords = '50% '+ yPos + 'px';
+           $bgobj.css({ backgroundPosition: coords });
+        });
+     });
+ });
+
 }
 
 function btnMenu()
@@ -29,25 +44,6 @@ function btnMenu()
     $('.capa').toggleClass('fosc');
     $(this).toggleClass('creu');
   });
-}
-
-function scroll()
-{
-  var operar = false;
-  var scroll;
-
-  window.addEventListener('scroll', function() {
-          console.log('scrolling');
-  });
-
-  //  if(scroll > 0){
-   //
-  //     if(!operar){operar = true;}
-   //
-  //  }else{
-  //    if(operar){operar = false;}
-  //  }
-
 }
 
 function resulOpera()
@@ -86,9 +82,8 @@ function notifica(msg , tipus){
 
 function desc() {
 
-    var $avgContent = $('.avgContent');
-    $('.desc').avgrund({
-      width: 640, // max is 640px
+  $('.desc').avgrund({
+      width: 380, // max is 640px
       height: 280, // max is 350px
       showClose: false, // switch to 'true' for enabling close button
       showCloseText: '', // type your text for close button
@@ -101,13 +96,9 @@ function desc() {
       openOnEvent: true, // set to 'false' to init on load
       setEvent: 'click', // use your event like 'mouseover', 'touchmove', etc.
       onLoad: function (elem) {
-        $('aside.amaga').css({
-          "display": "block"
-        });
-
       }, // set custom call before popin is inited..
       onUnload: function (elem) {}, // ..and after it was closed
-      template: $avgContent // or function (elem) { ... }, or selector $('.content')
+      template: $('.avgContent')
   });
 }
 

@@ -1,0 +1,25 @@
+.papelera
+{
+  width: 150px;
+  height: 150px;
+  background: #F57F17;
+  margin-top: 580px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+}
+
+.papelera-img-tancat
+{
+  background: url(../imatges/paperera.png); /*Imatge de la basura rancat*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.papelera-img-obert
+{
+  background: url(../imatges/paperera2.png); /*Imatge de la basura obert*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

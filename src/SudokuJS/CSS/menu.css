@@ -1,0 +1,124 @@
+@import "normalize.css";
+@import "../Fonts/font.css";
+
+body{font-family: gamer;}
+
+.finalitzat
+{
+  width: 70%;
+  height: 40%;
+  display: none;
+  margin: 0 auto;
+  background: #37474F;
+  padding: 20px;
+}
+
+.menu
+{
+  width: 90%;
+  height: 70%;
+  background: #37474F;
+  margin: 5% auto;
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 8px;
+  background: #00838F;
+  box-shadow: 0px 10px 0px 0px #006064;
+
+}
+
+.rodona
+{
+   background: #2196F3;
+   border: none;
+   color: white;
+   font-family: fantasy;
+   font-size: 2em;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 8px;
+   transition: all ease-out 0.5s;
+   box-shadow: 0px 5px 0px 0px rgb(0, 105, 202);
+}
+.butto
+{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 20%;
+  margin: 0 auto;
+  transition: all ease-out 0.5s;
+}
+
+.rodona:hover
+{
+  background-color: white;
+  color: black;
+  transition: all ease-in-out 0.5s;
+}
+
+.rodona:not(:hover)
+{
+  background-color: #2196F3;
+  color: white;
+  transition: all ease-in-out 0.5s;
+}
+
+.bg
+{
+  background-image: url(../imatges/);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;;
+}
+
+.titul
+{
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.nivell
+{
+  width: 0%;
+  height: 0%;
+  background: transparent;
+  padding: 20px;
+  transition: all 0.5s;
+  border-radius: 8px;
+  border-left: solid 2px #B2DFDB;
+}
+#buid{
+  visibility:hidden;
+}
+
+div.nivell ul
+{
+  text-decoration: none;
+  list-style: none;
+}
+div.nivell ul li
+{
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 3em;
+}
+
+div.nivell ul li:hover
+{
+  color: #f44336;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+#button2
+{
+    display: none;
+}

@@ -1,11 +1,3 @@
-/**
- *  jQuery Avgrund Popin Plugin
- *  http://github.com/voronianski/jquery.avgrund.js/
- *
- *  (c) http://pixelhunter.me/
- *  MIT licensed
- */
-
 (function (factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD

@@ -1,0 +1,22 @@
+.panell
+{
+  width: 10%;
+  height: 90%;
+  background: #009688;
+  margin: 5px;
+  box-shadow: 0px 5px 0px 0px #FFAB00;
+}
+
+.panell div
+{
+  width: 100%;
+  height: 25%;
+  background: #D84315;
+}
+
+.panell img
+{
+  width: 100%;
+  height: 100%;
+
+}

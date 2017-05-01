@@ -1,0 +1,14 @@
+@font-face {
+    font-family: gamer;
+    src: url(../Fonts/Brotherina.otf);
+}
+
+div h1.game
+{
+  font-family: gamer;
+  font-size: 7em;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}

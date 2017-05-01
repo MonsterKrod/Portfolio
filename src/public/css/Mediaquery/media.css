@@ -1,0 +1,138 @@
+@media (min-width: 700px){
+
+  div.menu
+  {
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+    border: solid 2px white;
+    box-shadow: 2px 2px 2px #212121;
+    position: fixed;
+    top: 5%;
+    left: 90%;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  h1.big,
+  h1.normal,
+  h1.normal_sul,
+  h1.normalNorm,
+  h1.normalDow,
+  p.smallDow,
+  p.normal_sul,
+  p.special
+  {
+    font-size: 62pt;
+    font-family: URBAN;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    word-break: break-all;
+  }
+  h1.normal
+  { font-size: 20pt;}
+
+  h1.normalDow
+  {font-size: 20pt; text-align: center;}
+
+  p.smallDow
+  {font-size: 15pt; text-align: center;}
+
+
+  h1.normal_sul
+  {
+    font-size: 34pt;
+    font-family: JMH;
+    letter-spacing: 5px;
+  }
+
+  p.normal_sul
+  {
+    font-size: 18pt;
+    font-family: SULLIVAN;
+  }
+
+  p.special,
+  p.lato
+  {
+    font-size: 8pt;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Lato';
+
+  }
+  p.lato
+  {
+    font-size: 15pt;
+    word-break: break-all;
+  }
+
+
+  h1.normalNorm
+  {
+    font-size: 36pt;
+    font-family: JMH;
+    text-align: center;
+  }
+
+  h1.roboto
+  {
+    font-size: 20pt;
+    font-family: 'Roboto';
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top:5%;
+    color:#45b29a;
+  }
+
+
+  .cricleProgresBar
+  {
+    width: 150px;
+    height: 150px;
+    border: dotted 4px white;
+    background: #f76c6c;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    transition: all ease-in-out 1s;
+
+  }
+
+
+  .circle-container
+  {
+    width: 150px;
+    height: 150px;
+    margin: 10% auto;
+    transform: rotate(0deg);
+    transition: all ease-in-out 1s;
+    position: relative;
+    top: 25%;
+  }
+
+  div.section-proces
+  {display: none;}
+
+  .textarea
+  {
+    width: 95%;
+    height: auto;
+  }
+
+  i.soci
+  {
+    font-size: 15pt;
+    color: white;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
