@@ -1,4 +1,4 @@
-@media (min-width: 700px){
+@media (min-width: 760px){
 
   div.menu
   {
@@ -91,35 +91,6 @@
     margin-top:5%;
     color:#45b29a;
   }
-
-
-  .cricleProgresBar
-  {
-    width: 150px;
-    height: 150px;
-    border: dotted 4px white;
-    background: #f76c6c;
-    border-radius: 50%;
-    position: absolute;
-    margin: auto;
-    transition: all ease-in-out 1s;
-
-  }
-
-
-  .circle-container
-  {
-    width: 150px;
-    height: 150px;
-    margin: 10% auto;
-    transform: rotate(0deg);
-    transition: all ease-in-out 1s;
-    position: relative;
-    top: 25%;
-  }
-
-  div.section-proces
-  {display: none;}
 
   .textarea
   {

@@ -6,6 +6,7 @@
 @import "Elements/buttons.css";
 @import "Mediaquery/media.css";
 @import "Elements/profile.css";
+@import "Elements/Loader.css";
 
 @import "Elements/noty.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
@@ -84,8 +85,10 @@ aside.amaga
   flex-flow: column wrap;
   justify-content: flex-start;
   background: #fff;
-  margin-top: 5%;
-  margin-bottom: 5%;
+}
+
+#graf{
+  height: auto;
 }
 .section-proces
 {
@@ -302,6 +305,14 @@ div.lefpar
 #contactar
 {text-align: center; margin-top: 20px; margin-bottom: 20px;}
 
+div.infograf
+{
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
 .bg,
 .mouse,
 .projectBG,
@@ -311,7 +322,8 @@ div.lefpar
 .cine,
 .about_img,
 .sobre_img,
-.bg_ph
+.bg_ph,
+.info_img
 {
   background-image: url('');
   background-position: center;
@@ -324,12 +336,17 @@ div.lefpar
   background-image: url('https://exposure-media.s3.amazonaws.com/production/photos/y1fbjqnoaem2vswpq60lsm2r00ib3d0khaky/original.gif?fm=pjpg&auto=format');
   background-attachment: fixed;
 }
-
 .cine
 {background-image: url('https://1stwebdesigner.com/wp-content/uploads/2017/02/cinemagraph.gif');}
 
 .about_img
 {background-image: url('https://1stwebdesigner.com/wp-content/uploads/2017/02/cinemagraph.gif');}
+
+.info_img
+{
+  background-image: url('http://comm.place4plays.ru/uploads/monthly_2016_10/58145a510c99f_linii_diagonal_polosy_fon_tekstura_50509_3840x2160(1).jpg.7a0cc9dc9441d31cf769f46ae87ebb1b.jpg');
+  background-attachment: fixed;
+}
 
 .bg_ph
 {
